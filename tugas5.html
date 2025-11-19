@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web line</title>
+    <style>
+        *{
+            margin:0 ;
+        }
+        .nav1{
+            min-width: 100vw;
+            background: linear-gradient(to left,violet,white,#C2E2FA,#1A3D64);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90PX;
+            
+        }
+        .list{
+            display: flex;
+            gap: 25px;
+            font-size: 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: violet;
+            font-weight: bold;
+
+        }
+        nav ul li{
+            list-style-type: none;
+        }
+        .gambar{
+            margin-left: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;                                                 
+            gap: 30px;
+            letter-spacing: 3px;
+        }
+        img{
+            width: 100px;
+            height: 80px;
+        }
+        .talk-btn{
+            margin-right: 60px;
+            background: l;   
+        }
+        button{
+            margin-right: 60px;
+            background: linear-gradient(to left,rgb(76, 184, 235),violet);
+            padding: 10px 25px;
+            border-radius: 25px;
+            border: none;
+            color: white;
+        }
+        button:hover{
+            background: linear-gradient(to left,white,violet);
+        }
+        .nama{
+            color: aliceblue;
+            font-weight: 900;
+        }
+        .judul1{
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+            font-size: 38px;
+            font-weight: 900;
+            color: rgb(222, 226, 228);
+            text-shadow: 0 0 15px rgb(26, 53, 94);
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+
+        }
+        .contect1{
+            background: linear-gradient(to left,#FFEAEA,#F5CBCB,#748DAE,#9ECAD6);
+            padding: 80px 100px;
+            text-align: center;
+        }
+        .isi1 p {
+            max-width: 800px;
+            line-height: 1.7;
+            background: transparent;
+            backdrop-filter: blur(10px);
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgb(50, 115, 124);
+            color: rgb(0, 0, 0);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .isi1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        img.ds{
+            width: 400px;
+            height: 400px;
+        }
+        .contect2{
+            background: linear-gradient(to Right,#D6F4ED,#87BAC3,#53629E,#473472);
+            padding: 80px 100px;
+        }
+        .judul2{
+            text-align: center;
+            font-size: 45px;
+            font-weight: 700;
+            color: rgb(105, 187, 224);
+            margin-bottom: 40px;
+            text-shadow: 0 0 20px rgb(61, 94, 107);
+        }
+        .isi2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+
+        }
+        .isi2 p {
+            background: transparent;
+            backdrop-filter: blur(12px);
+            padding: 20px 25px;
+            border-radius: 15px;
+            color: black;
+            box-shadow: 0 0 15px rgb(6, 77, 105);
+            line-height: 1.6;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        img.cyber{
+            width: 400px;
+            height: 400px;
+        }
+
+        
+        .contect3{
+            background: linear-gradient(to left,#8CA9FF,#AAC4F5,#FFF8DE,#FFF2C6);
+            padding: 80px 100px;
+            text-align: center;
+        }
+        .isi3 p {
+            max-width: 800px;
+            line-height: 1.7;
+            background: transparent;
+            backdrop-filter: blur(10px);
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgb(50, 115, 124);
+            color: rgb(0, 0, 0);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .isi3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        img.JG{
+            width: 400px ;
+            height: 400px ;
+        }
+        .judul3{
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+            font-size: 38px;
+            font-weight: 900;
+            color: rgb(105, 187, 224);
+            text-shadow: 0 0 15px rgb(26, 53, 94);
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+
+        }
+        footer{
+            background: linear-gradient(to left,black,#1c2541);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 0;
+            gap: 20px;
+            box-shadow: 0 -4px 20px black;
+        }
+        footer h2{
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .abautus ul{
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        .abatus ul li a{
+            text-decoration: none;
+            color: #C2E2FA;
+            font-weight: bold;
+            transition: color 0.03s ease;
+        }
+        .abatus ul li a:hover{
+            color: blue;
+        }
+        .copy{
+            font-size: 15px;
+            color: whitesmoke;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="nav1">
+        <div class="gambar">
+        <img class="logo" src="cybersecurity-1-1.png" alt="">
+        <p class="nama">cybersecurity</p>
+        </div>
+        <ul class="list">
+            <li><a href="">HOME</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">CONTACT US</a></li>
+        </ul>
+         <button>LEST'TALK</button>
+    </nav>
+    <div class="contect1">
+        <h1 class="judul1">APA ITU CYBERSECURITY?</h1>
+        <div class="isi1">
+            <p>serangkaian praktik, teknologi, dan proses untuk melindungi sistem, jaringan, program, dan data dari serangan siber atau akses ilegal. Tujuannya adalah untuk menjaga kerahasiaan, integritas, dan ketersediaan data, serta mencegah kerugian finansial, gangguan operasional, atau kebocoran identitas. </p>
+            <img src="cybersecurity-1-1.png" alt="ds" class="ds">
+        </div>
+    </div>
+
+    <div class="contect2">
+        <h1 class="judul2">FUNGSI CYBERSECURITY?</h1>
+        <div class="isi2">
+            <div>
+                <p>Melindungi data sensitif: Melindungi informasi pribadi, data keuangan, dan kekayaan intelektual dari akses tidak sah melalui enkripsi dan kontrol akses. </p>
+                <br>
+                <p>Memastikan ketersediaan data: Mencegah serangan seperti ransomware yang dapat menghentikan operasi sistem atau layanan, sehingga operasional bisnis tetap berjalan stabil. </p>
+            </div>
+            <img src="coding-4-89.png" alt="cyber" class="cyber">
+        </div>
+    </div>
+
+    <div class="contect3">
+        <h1 class="judul3"> APA ITU ARTIFICIAL INTELLIGENCE?</h1>
+        <div class="isi3">
+            <p>Artificial Intelligence (AI) adalah teknologi yang memungkinkan komputer dan mesin untuk melakukan tugas-tugas yang biasanya membutuhkan kecerdasan manusia, seperti belajar, bernalar, memecahkan masalah, dan membuat keputusan. Ini dicapai dengan melatih sistem pada data dalam jumlah besar untuk mengenali pola, memahami bahasa, dan bahkan menciptakan konten baru. Contohnya termasuk asisten virtual, rekomendasi produk di aplikasi belanja, dan sistem navigasi pada transportasi online. </p>
+            <img src="cto-63.png" alt="JG" class="JG">
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="ce">
+            <h2>CONTACT US</h2>
+        </div>
+        <div class="abautus">
+            <ul>
+                <li><a href="#">EMAIL</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">INSTAGRAM</a></li>
+            </ul>   
+        </div>
+        <div class="copy">
+            <p>@ All Right Reserved 2020</p>
+        </div>
+    </footer>
+</body>
+</html>
